@@ -74,35 +74,35 @@
 
   /* WRITE YOUR HOMEWORK SCRIPTS BELOW HERE */
   function halfNumber(num) {
-      var halfNumber = num - num;
+      var halfNumber = num /  2;
       document.getElementById("solution").innerHTML = 'The result of half the number ' + num + ' is ' + halfNumber;
   }
       
-  var halfButton = document.getElementById("half-button");
-  halfButton.addEventListener("click", function() {
+  var squareButton = document.getElementById("half-button");
+  squarButton.addEventListener("click", function() {
     var num = document.getElementById("half-input").value;
     halfNumber(num);
   });
-
-  function fractionNumber(num) {
-      var fractionNumber = num / num;
-      document.getElementById("solution").innerHTML = 'The result of fraction the number ' + num + ' is ' + fractionNumber;
+/* WRITE YOUR HOMEWORK SCRIPTS BELOW HERE */
+  function intNumber(num) {
+      var intNumber = Math.round(num);
+      document.getElementById("solution").innerHTML = 'The nearest whole number of ' + num + ' is ' + intNumber;
   }
       
-  var fractionButton = document.getElementById("fraction-button");
-  fractionButton.addEventListener("click", function() {
+  var intButton = document.getElementById("int-button");
+  intButton.addEventListener("click", function() {
     var num = document.getElementById("fraction-input").value;
-    fractionNumber(num);
+    intNumber(num);
   });
-
-  function integerNumber(num) {
-      var intergerNumber = num * num;
-      document.getElementById("solution").innerHTML = 'The result of interger the number ' + num + ' is ' + intergerNumber;
+/* WRITE YOUR HOMEWORK SCRIPTS BELOW HERE */
+  function areaNumber(num) {
+      var areaNumber = num**2 *Math.PI;
+      document.getElementById("solution").innerHTML = 'The area of circle with radius ' + num + ' is ' + areaNumber;
   }
       
-  var intergerButton = document.getElementById("integer-button");
-  intergerButton.addEventListener("click", function() {
-    var num = document.getElementById("interger-input").value;
+  var intergerButton = document.getElementById("area-button");
+  areaButton.addEventListener("click", function() {
+    var num = document.getElementById("area-input").value;
     intergerNumber(num);
   });
 </script>
